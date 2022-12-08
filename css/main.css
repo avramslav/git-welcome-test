@@ -1,3 +1,172 @@
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/epilogue/Epilogue-wght.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/epilogue/Epilogue-Italic-wght.woff2") format("woff2");
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/epilogue/Epilogue-wght.woff2") format("woff2");
+  font-style: oblique 0deg 45deg;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/epilogue/Epilogue-Italic-wght.woff2") format("woff2");
+  font-style: oblique 0deg 45deg;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/epilogue/Epilogue-wght.woff2") format("woff2");
+  font-stretch: 75% 125%;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../fonts/spectral/Spectral-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../fonts/spectral/Spectral-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../fonts/spectral/Spectral-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../fonts/spectral/Spectral-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../fonts/spectral/Spectral-ExtraLight.woff2") format("woff2");
+  font-weight: 275;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../fonts/spectral/Spectral-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 275;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../fonts/spectral/Spectral-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../fonts/spectral/Spectral-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+.epilogue-title,
+.epilogue-paragraph {
+  font-family: "Epilogue", sans-serif;
+  font-feature-settings: "salt" on;
+}
+
+.epilogue-title {
+  font-variation-settings: "wght" 700;
+  font-size: 82px;
+  line-height: 66px;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  color: #101643;
+  font-style: oblique 30deg;
+}
+
+.epilogue-paragraph {
+  font-variation-settings: "wght" 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 150%;
+  color: #101643;
+}
+
+.epilogue-paragraph--cursive {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  text-indent: 70px;
+  color: #1B2673;
+  font-style: oblique 30deg;
+  font-feature-settings: 'salt' on;
+}
+
+.spectral-title,
+.spectral-paragraph {
+  font-family: "Spectral", serif;
+  font-variant-ligatures: discretionary-ligatures;
+}
+
+.spectral-paragraph {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 85px;
+  text-align: center;
+  font-feature-settings: 'cpsp' on;
+  color: #142E2C;
+}
+
+.spectral-title span {
+  font-style: normal;
+  font-weight: 275;
+  font-size: 130px;
+  line-height: 130%;
+  color: #142E2C;
+  text-transform: capitalize;
+}
+
+.spectral-paragraph--regular {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 40px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #1E4542;
+}
+
+.spectral-paragraph--regular::first-letter {
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 56px;
+  color: #1E4542;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,17 +194,17 @@ img {
 h1 {
   font-weight: normal;
   margin-bottom: .5em;
+  text-align: center;
 }
 
 .box {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
   border-top: 8px solid #5898B2;
   border-bottom: 8px solid #FF7C93;
-  max-width: 800px;
-  margin: 0 auto;
+  /*max-width: 1200px;*/
   background-color: #FFF;
   padding: 28px;
-  margin-bottom: 28px;
+  margin: 0 auto 28px;
 }
 
 .photo {
